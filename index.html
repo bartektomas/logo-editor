@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Редактировать логотип</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./bootstrap/css/bootstrap-theme.min.css" />
+        <link rel="stylesheet" href="./colorpicker/css/colorpicker.css" />
+        <!-- <link rel="stylesheet" href="./droparea/droparea.css" /> -->
+        <link rel="stylesheet" href="./css/index.css" />
+    </head>
+    <body>
+        <h1 class="text-center blue">Редактирование логотипа</h1>
+
+        <div class="mode-switcher">
+            <div class="row no-margin">
+                <div class="col-sm-6 text-center">
+                    <a href="javascript:;" class="action-link active" data-target="mode-text">Текстовый</a>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <a href="javascript:;" class="action-link" data-target="mode-image">Графический</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="mode-text" class="mode-pane text-center">
+            <form action="" method="post" class="logo-form form-inline">
+                <div class="tools">
+                    <div class="form-group">
+                        <label for="logo-font-family">Шрифт</label>
+                        <select id="logo-font-family" name="font_family" class="form-control font-family"></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="logo-font-family">Размер</label>
+                        <select id="logo-font-size" name="font_size" class="form-control font-size"></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="logo-font-color">Цвет</label>
+                        <input type="text" id="logo-font-color" name="font_color" class="form-control font-color" value="#000000" />
+                    </div>
+                </div>
+
+                <input id="logo-text" type="text" class="logo-text text-center" name="logo_text" value="Рога и Копыта" placeholder="Введите текст логотипа" />
+
+                <div class="button">
+                    <button type="submit" class="btn btn-primary btn-lg">Применить</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="mode-image" class="mode-pane text-center hide">
+            <form action="" method="post" class="logo-form form-inline">
+                <div class="droparea_container"  >
+                    <div class="droparea text-center" >
+                        <div class="logo-image-placeholder-wrapper">
+                            <img src="http://placehold.it/300x300?text=LOGO" alt="Изображение логотипа" id="file-preview" class="logo-image-placeholder" >
+                        </div>
+                        <span id="droparea-hint">Перетащите файл сюда или кликните для выбора</span>
+                    </div>
+                </div>
+                <input type="file" name="logo_file" id="logo-file" class="hide" >
+
+                <div class="form-group">
+                    <label for="logo-alt-text">Alt текст</label>
+                    <input type="text" id="logo-alt-text" name="alt_text" class="form-control" value="" />
+                </div>
+
+                <div class="button">
+                    <button id="delete-logo-file" type="button" class="btn btn-danger btn-lg hide">Удалить</button>
+                    <button type="submit" class="btn btn-primary btn-lg">Применить</button>
+                </div>
+            </form>
+        </div>
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="./js/fontsDropDown.jquery.js"></script>
+        <script type="text/javascript" src="./js/fontSizeDropDown.jquery.js"></script>
+        <script type="text/javascript" src="./colorpicker/js/colorpicker.js"></script>
+        <script type="text/javascript" src="./js/index.js"></script>
+    </body>
+</html>

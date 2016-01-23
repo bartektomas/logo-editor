@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin,cyrillic);
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.blue{
+    color: #286090;
+}
+
+a.action-link,
+a.action-link:hover{
+    text-decoration: none;
+}
+
+a.action-link{
+    border-bottom: 1px dashed #337ab7;
+}
+
+a.action-link.active{
+    font-weight: 600;
+}
+
+.mode-switcher{
+    margin: 35px 0 45px 0; 
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.no-margin{
+    margin: 0;
+}
+
+.mode-pane .tools{
+    margin-bottom: 25px;
+}
+
+.mode-pane .logo-form{
+    font-size: 18px;
+}
+
+.mode-pane .logo-form .button{
+    margin: 25px 0;
+}
+
+.mode-pane .logo-form .form-group{
+    margin: 0 10px;
+}
+
+.mode-pane .logo-form label{
+    font-weight: 400;
+}
+
+.mode-pane .logo-form input,
+.mode-pane .logo-form select{
+    font-size: 18px;
+    padding: 5px;
+    width: auto;
+    height: auto;
+}
+
+.mode-pane .logo-form .logo-text{
+    font-size: 48px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    outline: none;
+}
+
+.mode-pane .logo-form .font-family{
+    display: inline-block;
+}
+
+.mode-pane .logo-form .logo-image-placeholder-wrapper{
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    line-height: 300px;
+}
+
+.mode-pane .logo-form .logo-image-placeholder-wrapper .logo-image-placeholder{
+    margin: auto;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.droparea{
+    /*border: thin dashed #ccc;*/
+    background: #f5f5f5;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #aaa;
+    padding: 10px;
+    margin: 20px;
+    min-width: 250px;
+    min-height: 250px;
+}
+
+.droparea.hover{
+    background: #bdf2c3;
+}
